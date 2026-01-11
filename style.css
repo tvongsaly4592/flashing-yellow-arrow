@@ -1,24 +1,12 @@
-/* Center the arrow on the page for better visibility */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0; /* Light background */
-}
+/* ... (body styles remain the same) ... */
 
-/* Style the arrow container */
 .flashing-arrow-container span {
-    font-size: 10rem; /* Make the arrow large */
-    color: #FFD700;  /* Gold/Yellow color */
-    
-    /* Apply the flashing animation */
-    animation: flash 1s infinite steps(1, end);
+    font-size: 10rem;
+    color: #FFD700;
+    /* Remove the 'animation' line from here */
 }
 
-/* Define the actual flashing movement using keyframes */
-@keyframes flash {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+/* New class that JavaScript will toggle */
+.is-flashing {
+    opacity: 0;
 }
