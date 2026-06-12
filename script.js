@@ -1,9 +1,7 @@
-// Function to toggle the 'is-flashing' class
-function toggleFlash() {
-    const arrow = document.querySelector('.flashing-arrow-container span');
-    arrow.classList.toggle('is-flashing');
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
 }
-
-// Run the toggleFlash function every 500 milliseconds (0.5 seconds)
-// This creates the visual flashing effect
-setInterval(toggleFlash, 500);
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
