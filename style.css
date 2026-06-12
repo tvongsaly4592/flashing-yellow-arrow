@@ -1,12 +1,6 @@
-/* ... (body styles remain the same) ... */
-
-.flashing-arrow-container span {
-    font-size: 10rem;
-    color: #FFD700;
-    /* Remove the 'animation' line from here */
+body{
+  padding: 25px;
 }
-
-/* New class that JavaScript will toggle */
-.is-flashing {
-    opacity: 0;
+.title {
+	color: #5C6AC4;
 }
